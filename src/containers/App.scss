@@ -1,0 +1,133 @@
+.App{
+  padding: 0 16px;
+  max-width: 990px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 14px;
+
+  & > div.Memocontents{
+    font-size: 14px;
+    & > ul{
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+
+      & > li{
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+        margin: 16px 0;
+        display: block;
+        position: relative;
+        padding: 16px;
+        color: #2e2e2e;
+        background-color: #fff;
+        box-sizing: border-box;
+        text-align: -webkit-match-parent;
+
+        & > div{
+          display: flex;
+          justify-content: space-between;
+
+          & > div.comment{
+            display: inline-block;
+          }
+
+          & > div.icons{
+            & > i{
+
+              &:nth-child(1){
+                color: #007bff;
+                padding-right: 5px;
+                border-right: 1px solid #e5e5e5;
+              }
+              &:nth-child(2){
+                padding-left: 4px;
+                color: #e53935;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  & > form{
+    box-sizing: border-box;
+    display: block;
+    margin-top: 0em;
+    color: #2e2e2e;
+
+    & > div.PostWrite{
+      padding: 10px 16px;
+      border: 1px solid #e5e5e5;
+      border-radius: 3px;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      position: relative;
+      display: list-item;
+      text-align: -webkit-match-parent;
+      list-style: none;
+
+      & > div.WriteHeader{
+        padding: 10px;
+        padding-bottom: 11px;
+        font-size: 14px;
+        margin: 0;
+        color: #000;
+        font-weight: 600;
+        list-style: none;
+        height: auto;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      & > textarea{
+        overflow: hidden;
+        overflow-wrap: break-word;
+        resize: none;
+        height: 140px;
+        font-size: 13px;
+        display: block;
+        padding: 10px;
+        color: #2e2e2e;    
+        border: 0;
+        box-shadow: none;
+        width: 100%;
+        min-height: 140px;
+        max-height: 500px;
+        border-radius: 0;
+        background: #fff;
+      }
+    }
+
+    & > div.PostAction{
+      position: relative;
+      margin: 16px 0 0;
+      color: #2e2e2e;
+      & > button{
+        &[disabled]{
+          background-color: #fafafa !important;
+          border: 1px solid #dfdfdf !important;
+          color: #919191 !important;
+          opacity: 1 !important;
+          cursor: default !important;
+        }
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 6px 10px;
+        background-color: #1aaa55;
+        border: 1px solid #168f48;
+        color: #fff;
+        position: relative;
+        display: inline-flex;
+        vertical-align: middle;
+      }
+    }
+  }
+}
